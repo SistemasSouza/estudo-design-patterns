@@ -4,3 +4,4 @@
 
 - Factory Method
 - Abstract Method
+- Builder
