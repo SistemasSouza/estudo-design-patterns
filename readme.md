@@ -9,3 +9,4 @@
 
 - Estrutural 
   - Adapter
+  - Bridge
