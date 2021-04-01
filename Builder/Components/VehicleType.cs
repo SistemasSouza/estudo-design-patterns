@@ -5,6 +5,7 @@ namespace Builder.Components
         SEDAN,
         SPORTCAR,
         PICKUPTRUCK,
-        TRUCK
+        TRUCK,
+        SUV
     }
 }

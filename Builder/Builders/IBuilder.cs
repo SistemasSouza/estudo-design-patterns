@@ -3,15 +3,16 @@ using Builder.Products;
 
 namespace Builders
 {
-    interface IBuilder
-    {
-      void Reset();
-      Vehicle GetVehicle();
+  interface IBuilder
+  {
+    void Reset();
+    Vehicle GetVehicle();
 
-      void SetSeats(int seats);
+    void SetSeats(int seats);
 
-      void SetEngine(Engine engine);
-      void SetTransmissionType (TransmissionType transmission);
-      void SetVehicleType(VehicleType vehicleType);     
-    }
+    void SetEngine(Engine engine);
+    void SetTransmissionType(TransmissionType transmission);
+    void SetVehicleType(VehicleType vehicleType);
+    void SetAirBag();
+  }
 }

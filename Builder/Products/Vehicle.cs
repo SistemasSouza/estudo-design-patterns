@@ -9,7 +9,14 @@ namespace Builder.Products
       private Engine engine;
       private TransmissionType transmission;
 
-      public VehicleType VehicleType 
+      private bool airBag;
+
+    public bool AirBag 
+    {
+       get => airBag;
+       set => airBag = value;
+    }
+    public VehicleType VehicleType 
       {
         get => vehicleType;
         set => vehicleType = value;
@@ -29,7 +36,5 @@ namespace Builder.Products
         get => transmission;
         set => transmission = value;
       }
-
-
     }
 }

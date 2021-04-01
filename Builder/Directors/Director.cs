@@ -12,7 +12,7 @@ namespace Builder.Directors
           this.builder = builder;
       }
 
-      public void ConstructorSedanCar()
+      public void ConstructSedanCar()
       {
         builder.SetVehicleType(VehicleType.SEDAN);
         builder.SetEngine(new Engine(2000));
@@ -20,12 +20,21 @@ namespace Builder.Directors
         builder.SetTransmissionType(TransmissionType.AUTOMATIC);
       }    
       
-      public void ConstructorTruck()
+      public void ConstructTruck()
       {
         builder.SetVehicleType(VehicleType.TRUCK);
         builder.SetEngine(new Engine(4000));
         builder.SetSeats(2);
         builder.SetTransmissionType(TransmissionType.MANUAL);
-      }    
+      }
+
+      public void ConstructSUV()
+      {
+        builder.SetVehicleType(VehicleType.SUV);
+        builder.SetEngine(new Engine(2600));
+        builder.SetSeats(4);
+        builder.SetTransmissionType(TransmissionType.AUTOMATIC_SEQUENTIAL);
+        builder.SetAirBag();
+      }        
     }
 }

@@ -11,14 +11,19 @@ namespace Builder
             var builder = new VehicleBuilder();
             var director= new Director(builder);
 
-            director.ConstructorSedanCar();
-            director.ConstructorTruck();
-
+            director.ConstructSedanCar();
             var vehicleSedan = builder.GetVehicle();
-            var vehicleTruck = builder.GetVehicle();
-
             Console.WriteLine($"Criado um veiculo do tipo: {vehicleSedan.VehicleType}");
+            
+            director.ConstructTruck();
+            var vehicleTruck = builder.GetVehicle();
             Console.WriteLine($"Criado um veiculo do tipo: {vehicleTruck.VehicleType}");
+            
+            director.ConstructSUV();
+
+            var vehicleSUV = builder.GetVehicle();
+
+            Console.WriteLine($"Criado um veiculo do tipo: {vehicleSUV.VehicleType}");
 
             Console.ReadLine();
         }
