@@ -6,3 +6,6 @@
   - Factory Method
   - Abstract Method
   - Builder
+
+- Estrutural 
+  - Adapter
