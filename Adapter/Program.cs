@@ -8,7 +8,7 @@ namespace Adapter
         {
           //var payment = new PayPal();
           
-          var payment = new PayonnerAdapter(new Payonner());
+          var payment = new MercadoPagoAdapter(new MercadoPago());
 
           payment.PayPalPayment();
           payment.PayPalReceive();
