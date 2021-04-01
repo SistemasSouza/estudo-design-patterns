@@ -10,3 +10,4 @@
 - Estrutural 
   - Adapter
   - Bridge
+  - Chain of responsability
