@@ -25,6 +25,7 @@ namespace Bridge
       live.Broadcasting();
       live.Comments();
       live.Subtitles();
+      live.Record();
       live.Result();
     }
     static void Main(string[] args)
@@ -32,6 +33,7 @@ namespace Bridge
       StartLiveAdvanced(new YouTube());
       StartLive(new TwitchTV());
       StartLive(new Facebook());
+      StartLiveAdvanced(new DLive());
 
       Console.ReadLine();
     }

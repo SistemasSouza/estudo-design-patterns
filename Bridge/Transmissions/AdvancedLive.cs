@@ -18,5 +18,10 @@ namespace Bridge.Transmissions
       {
         Console.WriteLine("Comentários liberados");
       }
+
+      public void Record()
+      {
+        Console.WriteLine("Gravando a transmissão");
+      }
     }
 }
